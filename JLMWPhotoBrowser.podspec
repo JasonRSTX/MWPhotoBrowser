@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
 
-  s.name = 'MWPhotoBrowser'
+  s.name = 'JLMWPhotoBrowser'
   s.version = '2.1.2'
   s.license = 'MIT'
-  s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
+  s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections. Base MWPhotoBrowser upgrade HUD ~> 1.0'
   s.description = <<-DESCRIPTION
                   MWPhotoBrowser can display one or more images or videos by providing either UIImage
                   objects, PHAsset objects, or URLs to library assets, web images/videos or local files.
@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
   ]
 
   s.homepage = 'https://github.com/mwaterfall/MWPhotoBrowser'
-  s.author = { 'Michael Waterfall' => 'michaelwaterfall@gmail.com' }
-  s.social_media_url = 'https://twitter.com/mwaterfall'
+  s.author = { 'Jason Li' => 'rstx_reg@aliyun.com' }
+  #s.social_media_url = 'https://twitter.com/mwaterfall'
 
   s.source = {
-    :git => 'https://github.com/mwaterfall/MWPhotoBrowser.git',
+    :git => 'https://github.com/JasonRSTX/MWPhotoBrowser.git',
     :tag => '2.1.2'
   }
   s.platform = :ios, '7.0'
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 0.9'
+  s.dependency 'MBProgressHUD', '~> 1.0'
   s.dependency 'DACircularProgress', '~> 2.3'
 
   # SDWebImage
